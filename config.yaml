@@ -1,0 +1,85 @@
+transformer:
+  d_model : 512
+  num_heads : 8
+  num_encoder_layers : 6
+  num_decoder_layers : 6
+  dropout : 0.1
+  attention_dropout : 0.1
+  activation_dropout : 0.1
+  max_position_embeddings : 1024
+  plm_vocab_size : 
+  generate_max_length : 
+
+gpt2:
+  plm_name : 'gpt2' # 117M
+  d_model : 768
+  num_heads : 12
+  num_layers : 12
+  attn_dropout : 0.1
+  residual_dropout : 0.1
+  embed_dropout : 0.1
+  max_position_embeddings : 1024
+  plm_vocab_size : 50257 # tokenizer.from_pretrained('gpt2')
+  generate_max_length : 
+
+gpt2-medium:
+  plm_name : 'gpt2-medium' # 325M
+  d_model : 1024
+  num_heads : 16
+  num_layers : 24
+  attn_dropout : 0.1
+  residual_dropout : 0.1
+  embed_dropout : 0.1
+  max_position_embeddings : 1024
+  plm_vocab_size : 50257 # tokenizer.from_pretrained('gpt2-medium')
+  generate_max_length :   
+
+gpt2-large:
+  plm_name : 'gpt2-large' # 774M
+  d_model : 1280
+  num_heads : 20
+  num_layers : 36
+  attn_dropout : 0.1
+  residual_dropout : 0.1
+  embed_dropout : 0.1
+  max_position_embeddings : 1024
+  plm_vocab_size : 50257 # tokenizer.from_pretrained('gpt2-large')
+  generate_max_length :   
+
+gpt2-xl:
+  plm_name : 'gpt2-xl' # 1.55B
+  d_model : 1600
+  num_heads : 25
+  num_layers : 48
+  attn_dropout : 0.1
+  residual_dropout : 0.1
+  embed_dropout : 0.1
+  max_position_embeddings : 1024
+  plm_vocab_size : 50257 # tokenizer.from_pretrained('gpt2-xl')
+  generate_max_length :   
+
+bart-base:
+  plm_name : 'bart-base' # 139M
+  d_model : 768
+  num_heads : 12
+  num_encoder_layers : 6
+  num_decoder_layers : 6
+  dropout : 0.1
+  attention_dropout : 0.1
+  activation_dropout : 0.1
+  max_position_embeddings : 1024
+  plm_vocab_size : 50265 # tokenizer.from_pretrained('facebook/bart-base')
+  generate_max_length : 
+
+bart-large:
+  plm_name : 'bart-large' # 406M
+  d_model : 1024
+  num_heads : 16
+  num_encoder_layers : 12
+  num_decoder_layers : 12
+  dropout : 0.1
+  attention_dropout : 0.1
+  activation_dropout : 0.1
+  max_position_embeddings : 1024 
+  plm_vocab_size : 50265 # tokenizer.from_pretrained('facebook/bart-large')
+  generate_max_length : 
