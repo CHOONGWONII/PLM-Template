@@ -10,8 +10,8 @@ transformer:
   plm_vocab_size : 
   generate_max_length : 
 
-gpt2:
-  plm_name : 'gpt2' # 117M
+gpt2-base:
+  plm_name : 'gpt2-base' # 117M
   d_model : 768
   num_heads : 12
   num_layers : 12
