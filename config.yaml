@@ -82,4 +82,37 @@ bart-large:
   activation_dropout : 0.1
   max_position_embeddings : 1024 
   plm_vocab_size : 50265 # tokenizer.from_pretrained('facebook/bart-large')
+  generate_max_length :
+
+t5-small:
+  plm_name : 't5-small' # 60M
+  d_model : 512
+  num_heads : 8
+  num_layers : 6
+  plm_vocab_size : 32128
+  dropout : 0.1
+  relative_attention_num_buckets : 32
+  relative_attention_max_distance : 128
+  generate_max_length : 
+
+t5-base:
+  plm_name : 't5-base' # 220 M
+  d_model : 768
+  num_heads : 12
+  num_layers : 12
+  plm_vocab_size : 32128
+  dropout : 0.1
+  relative_attention_num_buckets : 32
+  relative_attention_max_distance : 128
+  generate_max_length : 
+
+t5-large:
+  plm_name : 't5-large' # 770M
+  d_model : 1024
+  num_heads : 16
+  num_layers : 24
+  plm_vocab_size : 32128
+  dropout : 0.1
+  relative_attention_num_buckets : 32
+  relative_attention_max_distance : 128
   generate_max_length : 
